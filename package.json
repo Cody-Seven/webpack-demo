@@ -1,0 +1,19 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "demo webpack",
+  "main": "index.js",
+  "author": "cody",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --open",
+    "start": "node_modules/.bin/webpack"
+  },
+  "dependencies": {
+    "webpack": "^4.29.6",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.2.3"
+  }
+}
