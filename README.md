@@ -19,3 +19,5 @@
 - babel是一个编译js的平台，可以用最新的js代码，而不用管浏览器对新标准对支持程度。可以使用js进行拓展对语言，比如React对jsx。Babel是几个模块化对包，核心功能位于babel-core的npm中，一般还会用解析ES6的babel-preset-env包和解析jsx的babel-preset-react
 
 - babel-preset-env 和 babel-preset-react配置env react失败了，换成@babel/preset-env和@babel/preset-react，配置'@babel/react', '@babel/env'，跑通。
+
+- babel可以放在webpack.config.js中配置但是多了一般新建babelrc配置，webpack会自动调用。
