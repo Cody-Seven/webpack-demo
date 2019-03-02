@@ -17,3 +17,5 @@
 - webpack1.*需要json-loader,2.*以上版本都不需要
 
 - babel是一个编译js的平台，可以用最新的js代码，而不用管浏览器对新标准对支持程度。可以使用js进行拓展对语言，比如React对jsx。Babel是几个模块化对包，核心功能位于babel-core的npm中，一般还会用解析ES6的babel-preset-env包和解析jsx的babel-preset-react
+
+- babel-preset-env 和 babel-preset-react配置env react失败了，换成@babel/preset-env和@babel/preset-react，配置'@babel/react', '@babel/env'，跑通。
