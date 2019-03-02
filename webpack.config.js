@@ -1,3 +1,5 @@
+const BannerPlugin = require('banner-plugin');
+
 module.exports = {
   devtool: 'eval-source-map',
 
@@ -41,5 +43,9 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+
+  plugins: [
+    new webpack.BannerPlugin('版权所有，翻版必究')
+  ]
 }

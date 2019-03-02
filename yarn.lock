@@ -1066,6 +1066,15 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
+banner-plugin@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/banner-plugin/-/banner-plugin-1.0.10.tgz#ad272c803bf6bdaa99de07fc7e2e4ed050a53df4"
+  integrity sha512-XuwnARcDq+sgmuYA3DFqaap7do8L4i3/IMkAWR7GKq2hg9xzf+j5N/eacwG4DCWkebi+nYzaqBDMrbGnh++ZJg==
+  dependencies:
+    geohash.js "^1.0.0"
+    h5-utils "^0.11.3"
+    vue "^2.5.2"
+
 base64-js@^1.0.2:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.0.tgz#cab1e6118f051095e58b5281aea8c1cd22bfc0e3"
@@ -2423,6 +2432,11 @@ gaze@^1.0.0:
   dependencies:
     globule "^1.0.0"
 
+geohash.js@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/geohash.js/-/geohash.js-1.0.0.tgz#2cab958cd604953c5847bd998b819acb7791683a"
+  integrity sha1-LKuVjNYElTxYR72Zi4Gay3eRaDo=
+
 get-caller-file@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.3.tgz#f978fa4c90d1dfe7ff2d6beda2a515e713bdcf4a"
@@ -2521,6 +2535,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2:
   version "4.1.15"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
   integrity sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
+
+h5-utils@^0.11.3:
+  version "0.11.9"
+  resolved "https://registry.yarnpkg.com/h5-utils/-/h5-utils-0.11.9.tgz#e1c063cda85ae76a0a000c0b59716097619cace5"
+  integrity sha512-JUerYNRVo8g64ZJf84XHX4SoK3pthHvG44InB+gl/q+TJVh5zNlsOrJdg1WNlAFl98CfkPF0xk9IxdvgQHwU2A==
 
 handle-thing@^2.0.0:
   version "2.0.0"
@@ -5524,6 +5543,11 @@ vm-browserify@0.0.4:
   integrity sha1-XX6kW7755Kb/ZflUOOCofDV9WnM=
   dependencies:
     indexof "0.0.1"
+
+vue@^2.5.2:
+  version "2.6.8"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.8.tgz#f21cbc536bfc14f7d1d792a137bb12f69e60ea91"
+  integrity sha512-+vp9lEC2Kt3yom673pzg1J7T1NVGuGzO9j8Wxno+rQN2WYVBX2pyo/RGQ3fXCLh2Pk76Skw/laAPCuBuEQ4diw==
 
 watchpack@^1.5.0:
   version "1.6.0"

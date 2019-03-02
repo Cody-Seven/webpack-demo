@@ -16,6 +16,7 @@
     "@babel/preset-react": "^7.0.0",
     "autoprefixer": "^9.4.9",
     "babel-loader": "^8.0.5",
+    "banner-plugin": "^1.0.10",
     "css-loader": "^2.1.0",
     "node-sass": "^4.11.0",
     "postcss-loader": "^3.0.0",

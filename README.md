@@ -27,3 +27,5 @@
 - css预处理器: postcss可以自动为css代码适应不同浏览器的css前缀。除了postcss外，添加一个autoprefixed的插件。在根目录新建postcss.config.js
 
 - 添加sass-loader，但是greeter.scss没生效。
+
+- plugins插件，loader可以说是打包构建过程中用来处理源文件的jsx scss less，一次处理一个。插件是对整个构建过程起作用。eg：添加一个版权声明的插件,config文件中需要引入，new。添加之后js文件头部会自动添加代码
