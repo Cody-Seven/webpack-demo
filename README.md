@@ -21,3 +21,5 @@
 - babel-preset-env 和 babel-preset-react配置env react失败了，换成@babel/preset-env和@babel/preset-react，配置'@babel/react', '@babel/env'，跑通。
 
 - babel可以放在webpack.config.js中配置但是多了一般新建babelrc配置，webpack会自动调用。
+
+- 样式需要style-loader和css-loader处理,css-loader可以把js的模块化思想应用到css，所有的类名，动画名默认都只作用域当前模块。modules配置为true时开启模块化模式，localIdentName: '[name]__[local]--[hash:base64:5]'配置可以实现类名不同。
