@@ -1,4 +1,4 @@
-const BannerPlugin = require('banner-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   devtool: 'eval-source-map',
