@@ -25,3 +25,5 @@
 - 样式需要style-loader和css-loader处理,css-loader可以把js的模块化思想应用到css，所有的类名，动画名默认都只作用域当前模块。modules配置为true时开启模块化模式，localIdentName: '[name]__[local]--[hash:base64:5]'配置可以实现类名不同。
 
 - css预处理器: postcss可以自动为css代码适应不同浏览器的css前缀。除了postcss外，添加一个autoprefixed的插件。在根目录新建postcss.config.js
+
+- 添加sass-loader，但是greeter.scss没生效。

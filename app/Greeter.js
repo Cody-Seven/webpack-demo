@@ -8,13 +8,12 @@
 
 import React, { Component } from 'react';
 import config from './config.json';
-import styles from './Greeter.css';
-
+import styles from './Greeter.scss';
 class Greeter extends Component{
   render() {
     return (
       <div className={styles.app}>
-        {config.greetText}
+        <p>{config.greetText}</p>
       </div>
     )
   }
