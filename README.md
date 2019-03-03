@@ -1,3 +1,4 @@
+### 开发配置
 - webpack在终端使用：webpack {entry file} {destination for bundled file} 这里webpack安装在目录下,entry file是入口文件。{destination for bundled file}是打包文件的存放路径。eg: node_modules/.bin/webpack app/index.js public/bundle.js 结果报错，找不到bundle.js，即使手动新建bundle.js不报错也会打包到dist下，由webpack版本造成。
 
 - sourcemap可以帮助调试，通过devtool设置，一般可以采用eval-source-map，打包速度快。
@@ -38,3 +39,8 @@
       3. 二者都可以通过插件拓展功能。
       4. HMR是一个webpack插件，能让浏览器实时观察修改后的效果。
       5. babel有个react-transform-hrm插件，可以在不对React模块进行额外配置前提下让hmr正常工作。
+
+
+### 优化配置
+
+- babel-loader可以加缓存，node_modules下会生成.cache，下次编译时只编译修改过的文件
