@@ -46,3 +46,5 @@
 - babel-loader可以加缓存，node_modules下会生成.cache，下次编译时只编译修改过的文件
 
 - babel-loader配置happypacj，多线程并行打包
+
+-htmlplugin配置minify:true，压缩html，加上hash：true，bundle.js的引入自动会带上hash

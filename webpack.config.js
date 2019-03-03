@@ -50,6 +50,10 @@ module.exports = {
   plugins: [
     new webpack.BannerPlugin('版权所有，翻版必究'),
     new HtmlWebpackPlugin({
+      minify: { //压缩html
+        removeAttributeQuotes: true // 去掉属性的双引号
+      },
+      hash: true,
       template: __dirname + '/app/index.tmpl.html'
     }),
     new webpack.HotModuleReplacementPlugin()
