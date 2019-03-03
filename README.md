@@ -31,3 +31,10 @@
 - plugins插件，loader可以说是打包构建过程中用来处理源文件的jsx scss less，一次处理一个。插件是对整个构建过程起作用。eg：添加一个版权声明的插件,config文件中需要引入，new。添加之后js文件头部会自动添加代码
 
 - HtmlWebpackPlugin插件，会依据简单的index.html自动饮用你打包后的js文件的新index.html，js添加hash时非常有用。
+
+- Hot Module Replacement，webpack配置文件中添加插件，webpack dev server中添加‘hot’参数。还有一个webpack的API需要调用。如果是react可以通过babel实现热更新。
+思路： 1. babel和webpack是独立的工具。
+      2. 二者可以一起工作。
+      3. 二者都可以通过插件拓展功能。
+      4. HMR是一个webpack插件，能让浏览器实时观察修改后的效果。
+      5. babel有个react-transform-hrm插件，可以在不对React模块进行额外配置前提下让hmr正常工作。
