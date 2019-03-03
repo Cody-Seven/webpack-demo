@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HappyPack = require('happypack');
 
 module.exports = {
   devtool: 'null',
@@ -22,7 +23,7 @@ module.exports = {
       {
         test: /(\.jsx|\.js)$/,
         use: {
-          loader: "babel-loader?cacheDirectory=true"
+          loader: "happypack/loader?id=happybabel"
         },
         exclude: /node_modules/
       },
@@ -53,6 +54,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: __dirname + '/app/index.tmpl.html'
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new HappyPack({
+      id: 'happybabel',
+      loader: ['babel-loader?cacheDirectory'],
+      threads: 4
+    })
   ]
 }

@@ -44,3 +44,5 @@
 ### 优化配置
 
 - babel-loader可以加缓存，node_modules下会生成.cache，下次编译时只编译修改过的文件
+
+- babel-loader配置happypacj，多线程并行打包
