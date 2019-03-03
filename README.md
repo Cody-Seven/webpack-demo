@@ -29,3 +29,5 @@
 - 添加sass-loader，但是greeter.scss没生效。
 
 - plugins插件，loader可以说是打包构建过程中用来处理源文件的jsx scss less，一次处理一个。插件是对整个构建过程起作用。eg：添加一个版权声明的插件,config文件中需要引入，new。添加之后js文件头部会自动添加代码
+
+- HtmlWebpackPlugin插件，会依据简单的index.html自动饮用你打包后的js文件的新index.html，js添加hash时非常有用。
