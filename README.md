@@ -40,6 +40,8 @@
       4. HMR是一个webpack插件，能让浏览器实时观察修改后的效果。
       5. babel有个react-transform-hrm插件，可以在不对React模块进行额外配置前提下让hmr正常工作。
 
+- file-loader: 解决引用路径的问题，打包前后资源路径的引用往往不一致，通过file-loader可以解决。
+- url-loader: 如果图片很多会发起很多http请求，降低页面性能。url-loader会讲引入图片编码，生成dataURI。把图片变成字符串，如果图片过大编码会消耗性能，所有limit来控制，小雨limit字节的文件会被转为dataURI，大于limit的用file-loader进程copy
 
 ### 优化配置
 
