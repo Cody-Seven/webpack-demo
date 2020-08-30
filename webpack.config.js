@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const RemoveCommentsPlugin = require('./comments-plugin');
 module.exports = {
   devtool: 'eval-source-map',
 
@@ -71,8 +71,15 @@ module.exports = {
         removeAttributeQuotes: true // 去掉属性的双引号
       },
       hash: true,
-      template: __dirname + '/app/index.tmpl.html'
+      // 1.可以不用template，自动生成html
+      // title: '这里可以改title',
+      // meta: {
+        // viewport: 'width=device-width'
+      // },
+      // 2.
+      template: __dirname + '/app/index.tmpl.html', // 模版文件
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new RemoveCommentsPlugin()
   ]
 }
