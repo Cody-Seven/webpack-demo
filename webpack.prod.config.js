@@ -45,7 +45,14 @@ module.exports = {
             loader: "sass-loader"
           }
         ]
-      }
+      },
+      {
+        test: /\.md$/,
+        use: {
+          loader: "./md-loader/index.js"
+        },
+        exclude: /node_modules/
+      },
     ]
   },
 

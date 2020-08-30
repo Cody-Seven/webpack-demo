@@ -52,7 +52,15 @@ module.exports = {
             limit: 500
           }
         }
-      }
+      },
+      {
+        test: /\.md$/,
+        use: [
+          'html-loader',
+          './md-loader/index.js'
+        ],
+        exclude: /node_modules/
+      },
     ]
   },
 
