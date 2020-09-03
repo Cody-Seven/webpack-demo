@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const RemoveCommentsPlugin = require('./comments-plugin');
+// const RemoveCommentsPlugin = require('./comments-plugin');
 module.exports = {
   devtool: 'eval-source-map',
 
@@ -80,6 +80,9 @@ module.exports = {
       template: __dirname + '/app/index.tmpl.html', // 模版文件
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new RemoveCommentsPlugin()
+    // new RemoveCommentsPlugin()
+    new webpack.ProvidePlugin({
+      _: 'lodash'
+    })
   ]
 }
